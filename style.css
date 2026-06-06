@@ -6,15 +6,17 @@ body{
 
 .skip-link{
     position: absolute;
-    left: -9999px;
+    top: -40px;
+    left: 10px;
+    background: yellow;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    z-index: 1000;
 }
 
 .skip-link:focus{
-    left: 10px;
     top: 10px;
-    background: white;
-    padding: 10px;
-    border: 2px solid black;
 }
 
 nav{
@@ -27,6 +29,8 @@ nav ul{
     justify-content: center;
     gap: 20px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav a{
