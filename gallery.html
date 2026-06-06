@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Accessible Photo Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,53 +23,61 @@
 
         <h1>My Flower Gallery</h1>
 
-        <div id="image" style="height:250px; border:3px solid red; background:white; margin-bottom:20px;">
+        <div id="image">
             Hover over an image below to display here.
         </div>
 
-        <img src="image1.jpg"
-             alt="Beautiful Red Rose"
-             onmouseover="upDate(this)"
-             onmouseout="undo()"
-             onfocus="upDate(this)"
-             onblur="undo()">
+        <div class="gallery">
 
-        <img src="image2.jpg"
-             alt="Bright Yellow Sunflower"
-             onmouseover="upDate(this)"
-             onmouseout="undo()"
-             onfocus="upDate(this)"
-             onblur="undo()">
+            <img src="image1.jpg"
+                 alt="Beautiful Red Rose"
+                 onmouseover="upDate(this)"
+                 onmouseout="undo()"
+                 onfocus="upDate(this)"
+                 onblur="undo()">
 
-        <img src="image3.jpg"
-             alt="Purple Lavender Flowers"
-             onmouseover="upDate(this)"
-             onmouseout="undo()"
-             onfocus="upDate(this)"
-             onblur="undo()">
+            <img src="image2.jpg"
+                 alt="Bright Yellow Sunflower"
+                 onmouseover="upDate(this)"
+                 onmouseout="undo()"
+                 onfocus="upDate(this)"
+                 onblur="undo()">
 
-        <img src="image4.jpg"
-             alt="Pink Cherry Blossoms"
-             onmouseover="upDate(this)"
-             onmouseout="undo()"
-             onfocus="upDate(this)"
-             onblur="undo()">
+            <img src="image3.jpg"
+                 alt="Purple Lavender Flowers"
+                 onmouseover="upDate(this)"
+                 onmouseout="undo()"
+                 onfocus="upDate(this)"
+                 onblur="undo()">
 
-        <img src="image5.jpg"
-             alt="White Daisy Flowers"
-             onmouseover="upDate(this)"
-             onmouseout="undo()"
-             onfocus="upDate(this)"
-             onblur="undo()">
+            <img src="image4.jpg"
+                 alt="Pink Cherry Blossoms"
+                 onmouseover="upDate(this)"
+                 onmouseout="undo()"
+                 onfocus="upDate(this)"
+                 onblur="undo()">
 
-        <img src="image1.jpg"
-             alt="Colorful Garden Flowers"
-             onmouseover="upDate(this)"
-             onmouseout="undo()"
-             onfocus="upDate(this)"
-             onblur="undo()">
+            <img src="image5.jpg"
+                 alt="White Daisy Flowers"
+                 onmouseover="upDate(this)"
+                 onmouseout="undo()"
+                 onfocus="upDate(this)"
+                 onblur="undo()">
+
+            <img src="image6.jpg"
+                 alt="Colorful Garden Flowers"
+                 onmouseover="upDate(this)"
+                 onmouseout="undo()"
+                 onfocus="upDate(this)"
+                 onblur="undo()">
+
+        </div>
 
     </main>
+
+    <footer>
+        <p>My Favorite Flowers Project</p>
+    </footer>
 
     <script src="script.js"></script>
 
