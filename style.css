@@ -5,8 +5,14 @@ body {
     padding: 0;
 }
 
+/* Skip Link */
 .skip-link {
     position: absolute;
+    left: -9999px;
+    top: auto;
+}
+
+.skip-link:focus {
     left: 10px;
     top: 10px;
     background: yellow;
@@ -17,6 +23,7 @@ body {
     z-index: 1000;
 }
 
+/* Navigation */
 nav {
     background-color: #333;
     padding: 15px;
@@ -25,64 +32,86 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
+    gap: 25px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 nav li {
-    margin: 0 20px;
+    margin: 0;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
+nav a:hover {
+    background-color: yellow;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Main Content */
 main {
     padding: 20px;
 }
 
 h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-#image {
-    width: 100%;
-    height: 250px;
-    border: 3px solid black;
-    margin-bottom: 20px;
-    background-color: white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     text-align: center;
-    line-height: 250px;
-    font-size: 24px;
-    font-weight: bold;
-    overflow: hidden;
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
+/* Images */
 img {
     width: 280px;
     height: 180px;
-    border: 4px solid #222;
-    border-radius: 20px;
-    margin: 5px;
     object-fit: cover;
-    transition: transform 0.2s ease;
+    border: 4px solid #222;
+    padding: 8px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease;
 }
 
 img:hover,
 img:focus {
-    transform: scale(1.03);
+    transform: scale(1.05);
     outline: 3px solid blue;
 }
 
+/* Flexbox Gallery */
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* nth-child Requirement */
+.gallery img:nth-child(even) {
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
 }
