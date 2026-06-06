@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Gallery</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Accessible Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="addTabFocus()">
 
-<a href="#main" class="skip-link">Skip to Main Content</a>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
 
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="about.html">About</a></li>
-</ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
 
-<main id="main">
+    <main id="main">
 
-<h1>Gallery</h1>
+        <h1>My Flower Gallery</h1>
 
-<div class="grid-container">
-<img src="image1.jpg" alt="Place 1">
-<img src="image2.jpg" alt="Place 2">
-<img src="image3.jpg" alt="Place 3">
-<img src="image4.jpg" alt="Place 4">
-<img src="image5.jpg" alt="Place 5">
-</div>
+        <div id="image">
+            Hover over an image below to display here.
+        </div>
 
-</main>
+        <img src="image1.jpg"
+             alt="Beautiful Red Rose"
+             onmouseover="upDate(this)"
+             onmouseout="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
+
+        <img src="image2.jpg"
+             alt="Bright Yellow Sunflower"
+             onmouseover="upDate(this)"
+             onmouseout="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
+
+        <img src="image3.jpg"
+             alt="Purple Lavender Flowers"
+             onmouseover="upDate(this)"
+             onmouseout="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
+
+        <img src="image4.jpg"
+             alt="Pink Cherry Blossoms"
+             onmouseover="upDate(this)"
+             onmouseout="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
+
+        <img src="image5.jpg"
+             alt="White Daisy Flowers"
+             onmouseover="upDate(this)"
+             onmouseout="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
+
+        <img src="image1.jpg"
+             alt="Colorful Garden Flowers"
+             onmouseover="upDate(this)"
+             onmouseout="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
